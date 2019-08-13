@@ -87,7 +87,7 @@ export default {
             .post("api/login", this.user)
             .then(res => {
               if (res.data == "success") {
-                this.$router.push("/main");
+                this.$router.push("/");
               } else {
                 this.$message(res.data);
               }
